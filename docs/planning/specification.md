@@ -1,12 +1,12 @@
-# Wardkeeper specification
+# BINO Care specification
 
 **Status:** Draft
 
-This document defines the agreed scope and testable requirements for Wardkeeper
+This document defines the agreed scope and testable requirements for BINO Care
 
 ## 1. Purpose and users
 
-The purpose of Wardkeeper is to provide a smart building management system for hospitals. It will primarily support two use cases: **bed/room assignment with AI assistance** and **building access management with tracking and AI assistance**.
+The purpose of BINO Care is to provide a smart building management system for hospitals. It will primarily support two use cases: **bed/room assignment with AI assistance** and **building access management with tracking and AI assistance**.
 
 **Use case 1: Bed/room assignment.** Designated hospital staff (such as a doctor) enter a patient’s accommodation requirements and use current room information to find suitable accommodation. AI provides a recommendation and explanation, while the staff member makes the final assignment.
 
@@ -42,7 +42,7 @@ A user may hold multiple roles. Permissions depend on their assigned roles.
 
 ## 3. System context
 
-Wardkeeper will be accessible through a web application using browsers on both PCs and mobile devices. It may also interact with IoT devices installed in the hospital.
+BINO Care will be accessible through a web application using browsers on both PCs and mobile devices. It may also interact with IoT devices installed in the hospital.
 
 ## 4. Functional requirements
 
