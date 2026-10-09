@@ -1,4 +1,4 @@
-# Contributing to Wardkeeper
+# Contributing to BINO Care
 
 ## Branches
 

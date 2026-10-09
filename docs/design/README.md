@@ -1,6 +1,6 @@
 # Design
 
-Use this directory for material that describes how Wardkeeper is designed and how its parts fit together. Add files and subdirectories as the design develops.
+Use this directory for material that describes how BINO Care is designed and how its parts fit together. Add files and subdirectories as the design develops.
 
 Examples of material to keep here:
 
