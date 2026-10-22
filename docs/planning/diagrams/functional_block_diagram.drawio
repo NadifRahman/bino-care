@@ -1,0 +1,128 @@
+<mxfile host="65bd71144e" compressed="false">
+    <diagram id="bino-functional-map" name="Functional blocks">
+        <mxGraphModel dx="2196" dy="1441" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3200" pageHeight="1500" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="bed-usecase-patient-needs" edge="1" parent="1" source="bed-usecase" style="edgeStyle=none;rounded=0;html=1;startArrow=none;endArrow=none;strokeColor=#777777;strokeWidth=1.2;exitX=0.1;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" target="patient-needs">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="495" y="555"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="patient-needs-note-link" edge="1" parent="1" source="patient-needs" style="edgeStyle=none;rounded=0;html=1;startArrow=none;endArrow=none;strokeColor=#777777;strokeWidth=1.2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="patient-needs-questions">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="bed-usecase-bed-availability" edge="1" parent="1" source="bed-usecase" style="edgeStyle=none;rounded=0;html=1;startArrow=none;endArrow=none;strokeColor=#777777;strokeWidth=1.2;exitX=0.9;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" target="bed-availability">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="bed-availability-note-link" edge="1" parent="1" source="bed-availability" style="edgeStyle=none;rounded=0;html=1;startArrow=none;endArrow=none;strokeColor=#777777;strokeWidth=1.2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="bed-availability-questions">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="bed-usecase-bed-recommendation" edge="1" parent="1" source="bed-usecase" style="edgeStyle=none;rounded=0;html=1;startArrow=none;endArrow=none;strokeColor=#777777;strokeWidth=1.2;exitX=0.1;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" target="bed-recommendation">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="bed-recommendation-note-link" edge="1" parent="1" source="bed-recommendation" style="edgeStyle=none;rounded=0;html=1;startArrow=none;endArrow=none;strokeColor=#777777;strokeWidth=1.2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="bed-recommendation-questions">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="bed-usecase-reservation-transfer" edge="1" parent="1" source="bed-usecase" style="edgeStyle=none;rounded=0;html=1;startArrow=none;endArrow=none;strokeColor=#777777;strokeWidth=1.2;exitX=0.9;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" target="reservation-transfer">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1030" y="805"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="reservation-transfer-note-link" edge="1" parent="1" source="reservation-transfer" style="edgeStyle=none;rounded=0;html=1;startArrow=none;endArrow=none;strokeColor=#777777;strokeWidth=1.2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="reservation-transfer-questions">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="security-usecase-registration" edge="1" parent="1" source="security-usecase" style="edgeStyle=none;rounded=0;html=1;startArrow=none;endArrow=none;strokeColor=#777777;strokeWidth=1.2;exitX=0.1;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" target="registration">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="registration-note-link" edge="1" parent="1" source="registration" style="edgeStyle=none;rounded=0;html=1;startArrow=none;endArrow=none;strokeColor=#777777;strokeWidth=1.2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="registration-questions">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="security-usecase-monitoring" edge="1" parent="1" source="security-usecase" style="edgeStyle=none;rounded=0;html=1;startArrow=none;endArrow=none;strokeColor=#777777;strokeWidth=1.2;exitX=0.9;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" target="monitoring">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="2630" y="530"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="monitoring-note-link" edge="1" parent="1" source="monitoring" style="edgeStyle=none;rounded=0;html=1;startArrow=none;endArrow=none;strokeColor=#777777;strokeWidth=1.2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="monitoring-questions">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="security-usecase-zone-detection" edge="1" parent="1" source="security-usecase" style="edgeStyle=none;rounded=0;html=1;startArrow=none;endArrow=none;strokeColor=#777777;strokeWidth=1.2;exitX=0.1;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" target="zone-detection">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="2060" y="820"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="zone-detection-note-link" edge="1" parent="1" source="zone-detection" style="edgeStyle=none;rounded=0;html=1;startArrow=none;endArrow=none;strokeColor=#777777;strokeWidth=1.2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="zone-detection-questions">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="security-usecase-response-review" edge="1" parent="1" source="security-usecase" style="edgeStyle=none;rounded=0;html=1;startArrow=none;endArrow=none;strokeColor=#777777;strokeWidth=1.2;exitX=0.9;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" target="response-review">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="response-review-note-link" edge="1" parent="1" source="response-review" style="edgeStyle=none;rounded=0;html=1;startArrow=none;endArrow=none;strokeColor=#777777;strokeWidth=1.2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="response-review-questions">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="bed-usecase" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;fontColor=#222222;strokeColor=#666666;strokeWidth=1;shadow=0;fontSize=26;fontStyle=1;align=center;verticalAlign=middle;spacing=16;fillColor=#dce8f5;" value="Bed/room assignment" vertex="1">
+                    <mxGeometry height="100" width="310" x="600" y="640" as="geometry"/>
+                </mxCell>
+                <mxCell id="security-usecase" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;fontColor=#222222;strokeColor=#666666;strokeWidth=1;shadow=0;fontSize=25;fontStyle=1;align=center;verticalAlign=middle;spacing=16;fillColor=#e1eddd;" value="Building access management&lt;br&gt;and tracking" vertex="1">
+                    <mxGeometry height="120" width="375" x="2130" y="620" as="geometry"/>
+                </mxCell>
+                <mxCell id="patient-needs" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;fontColor=#222222;strokeColor=#666666;strokeWidth=1;shadow=0;fontSize=21;fontStyle=0;align=center;verticalAlign=middle;spacing=12;fillColor=#edf3f9;" value="Patient needs" vertex="1">
+                    <mxGeometry height="75" width="220" x="250" y="390" as="geometry"/>
+                </mxCell>
+                <mxCell id="patient-needs-questions" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;fontColor=#222222;strokeColor=#666666;strokeWidth=1;shadow=0;fontSize=18;align=left;verticalAlign=middle;spacing=16;fillColor=#fffef7;strokeColor=#a0a0a0;" value="&lt;div style=&quot;margin:0 0 9px 0;line-height:1.3;&quot;&gt;What room, equipment and accessibility needs are given?&lt;/div&gt;&lt;div style=&quot;margin:0 0 9px 0;line-height:1.3;&quot;&gt;What should admissions save?&lt;/div&gt;&lt;div style=&quot;margin:0 0 9px 0;line-height:1.3;&quot;&gt;Form or checklist?&lt;/div&gt;&lt;div style=&quot;margin:0 0 0px 0;line-height:1.3;&quot;&gt;What if information is missing?&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="245" width="370" x="70" y="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="bed-availability" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;fontColor=#222222;strokeColor=#666666;strokeWidth=1;shadow=0;fontSize=21;fontStyle=0;align=center;verticalAlign=middle;spacing=12;fillColor=#edf3f9;" value="Bed availability" vertex="1">
+                    <mxGeometry height="75" width="235" x="1030" y="370" as="geometry"/>
+                </mxCell>
+                <mxCell id="bed-availability-questions" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;fontColor=#222222;strokeColor=#666666;strokeWidth=1;shadow=0;fontSize=18;align=left;verticalAlign=middle;spacing=16;fillColor=#fffef7;strokeColor=#a0a0a0;" value="&lt;div style=&quot;margin:0 0 9px 0;line-height:1.3;&quot;&gt;What bed details do we need?&lt;/div&gt;&lt;div style=&quot;margin:0 0 9px 0;line-height:1.3;&quot;&gt;Which beds can be offered?&lt;/div&gt;&lt;div style=&quot;margin:0 0 9px 0;line-height:1.3;&quot;&gt;How do staff update readiness?&lt;/div&gt;&lt;div style=&quot;margin:0 0 0px 0;line-height:1.3;&quot;&gt;What if the information is old?&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="245" width="370" x="1060" y="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="bed-recommendation" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;fontColor=#222222;strokeColor=#666666;strokeWidth=1;shadow=0;fontSize=21;fontStyle=0;align=center;verticalAlign=middle;spacing=12;fillColor=#edf3f9;" value="Bed recommendation&lt;br&gt;and selection" vertex="1">
+                    <mxGeometry height="85" width="290" x="165" y="950" as="geometry"/>
+                </mxCell>
+                <mxCell id="bed-recommendation-questions" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;fontColor=#222222;strokeColor=#666666;strokeWidth=1;shadow=0;fontSize=18;align=left;verticalAlign=middle;spacing=16;fillColor=#fffef7;strokeColor=#a0a0a0;" value="&lt;div style=&quot;margin:0 0 9px 0;line-height:1.3;&quot;&gt;Which needs and bed details are used?&lt;/div&gt;&lt;div style=&quot;margin:0 0 9px 0;line-height:1.3;&quot;&gt;What should the recommendation explain?&lt;/div&gt;&lt;div style=&quot;margin:0 0 9px 0;line-height:1.3;&quot;&gt;Rules, AI, or both?&lt;/div&gt;&lt;div style=&quot;margin:0 0 0px 0;line-height:1.3;&quot;&gt;What happens if no bed fits?&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="245" width="380" x="55" y="1150" as="geometry"/>
+                </mxCell>
+                <mxCell id="reservation-transfer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;fontColor=#222222;strokeColor=#666666;strokeWidth=1;shadow=0;fontSize=21;fontStyle=0;align=center;verticalAlign=middle;spacing=12;fillColor=#edf3f9;" value="Reservation&lt;br&gt;and transfer" vertex="1">
+                    <mxGeometry height="85" width="265" x="1050" y="925" as="geometry"/>
+                </mxCell>
+                <mxCell id="reservation-transfer-questions" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;fontColor=#222222;strokeColor=#666666;strokeWidth=1;shadow=0;fontSize=18;align=left;verticalAlign=middle;spacing=16;fillColor=#fffef7;strokeColor=#a0a0a0;" value="&lt;div style=&quot;margin:0 0 9px 0;line-height:1.3;&quot;&gt;Which patient, bed, nurse and time are needed?&lt;/div&gt;&lt;div style=&quot;margin:0 0 9px 0;line-height:1.3;&quot;&gt;What should nurses see?&lt;/div&gt;&lt;div style=&quot;margin:0 0 9px 0;line-height:1.3;&quot;&gt;How should transfer progress be recorded?&lt;/div&gt;&lt;div style=&quot;margin:0 0 0px 0;line-height:1.3;&quot;&gt;How do we prevent booking the same bed twice?&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="245" width="385" x="1070" y="1130" as="geometry"/>
+                </mxCell>
+                <mxCell id="registration" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;fontColor=#222222;strokeColor=#666666;strokeWidth=1;shadow=0;fontSize=21;fontStyle=0;align=center;verticalAlign=middle;spacing=12;fillColor=#eef4eb;" value="Registration" vertex="1">
+                    <mxGeometry height="75" width="230" x="1740" y="365" as="geometry"/>
+                </mxCell>
+                <mxCell id="registration-questions" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;fontColor=#222222;strokeColor=#666666;strokeWidth=1;shadow=0;fontSize=18;align=left;verticalAlign=middle;spacing=16;fillColor=#fffef7;strokeColor=#a0a0a0;" value="&lt;div style=&quot;margin:0 0 9px 0;line-height:1.3;&quot;&gt;Who is being monitored?&lt;/div&gt;&lt;div style=&quot;margin:0 0 9px 0;line-height:1.3;&quot;&gt;What identity, role and purpose should be recorded?&lt;/div&gt;&lt;div style=&quot;margin:0 0 9px 0;line-height:1.3;&quot;&gt;How is the person linked to location observations? Database?&lt;/div&gt;&lt;div style=&quot;margin:0 0 0px 0;line-height:1.3;&quot;&gt;What changes when their visit or situation ends?&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="245" width="385" x="1585" y="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="monitoring" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;fontColor=#222222;strokeColor=#666666;strokeWidth=1;shadow=0;fontSize=21;fontStyle=0;align=center;verticalAlign=middle;spacing=12;fillColor=#eef4eb;" value="Monitoring" vertex="1">
+                    <mxGeometry height="75" width="220" x="2695" y="385" as="geometry"/>
+                </mxCell>
+                <mxCell id="monitoring-questions" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;fontColor=#222222;strokeColor=#666666;strokeWidth=1;shadow=0;fontSize=18;align=left;verticalAlign=middle;spacing=16;fillColor=#fffef7;strokeColor=#a0a0a0;" value="&lt;div style=&quot;margin:0 0 9px 0;line-height:1.3;&quot;&gt;How do we identify and locate the person?&lt;/div&gt;&lt;div style=&quot;margin:0 0 9px 0;line-height:1.3;&quot;&gt;What location and time should be reported?&lt;/div&gt;&lt;div style=&quot;margin:0 0 9px 0;line-height:1.3;&quot;&gt;RFID, cameras, or another method?&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="245" width="385" x="2700" y="95" as="geometry"/>
+                </mxCell>
+                <mxCell id="zone-detection" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;fontColor=#222222;strokeColor=#666666;strokeWidth=1;shadow=0;fontSize=21;fontStyle=0;align=center;verticalAlign=middle;spacing=12;fillColor=#eef4eb;" value="Zone detection" vertex="1">
+                    <mxGeometry height="75" width="240" x="1700" y="940" as="geometry"/>
+                </mxCell>
+                <mxCell id="zone-detection-questions" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;fontColor=#222222;strokeColor=#666666;strokeWidth=1;shadow=0;fontSize=18;align=left;verticalAlign=middle;spacing=16;fillColor=#fffef7;strokeColor=#a0a0a0;" value="&lt;div style=&quot;margin:0 0 9px 0;line-height:1.3;&quot;&gt;What location, role and situation are needed?&lt;/div&gt;&lt;div style=&quot;margin:0 0 9px 0;line-height:1.3;&quot;&gt;Is the person in a green, orange or red area?&lt;/div&gt;&lt;div style=&quot;margin:0 0 9px 0;line-height:1.3;&quot;&gt;Room/area names or map coordinates?&lt;/div&gt;&lt;div style=&quot;margin:0 0 0px 0;line-height:1.3;&quot;&gt;What if the location or applicable role is unclear?&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="255" width="390" x="1575" y="1140" as="geometry"/>
+                </mxCell>
+                <mxCell id="response-review" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;fontColor=#222222;strokeColor=#666666;strokeWidth=1;shadow=0;fontSize=21;fontStyle=0;align=center;verticalAlign=middle;spacing=12;fillColor=#eef4eb;" value="Response and review" vertex="1">
+                    <mxGeometry height="75" width="270" x="2690" y="960" as="geometry"/>
+                </mxCell>
+                <mxCell id="response-review-questions" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;fontColor=#222222;strokeColor=#666666;strokeWidth=1;shadow=0;fontSize=18;align=left;verticalAlign=middle;spacing=16;fillColor=#fffef7;strokeColor=#a0a0a0;" value="&lt;div style=&quot;margin:0 0 9px 0;line-height:1.3;&quot;&gt;What event needs a response?&lt;/div&gt;&lt;div style=&quot;margin:0 0 9px 0;line-height:1.3;&quot;&gt;Who gets notified, and what should they see?&lt;/div&gt;&lt;div style=&quot;margin:0 0 9px 0;line-height:1.3;&quot;&gt;Simple rules for alerts and AI for patterns?&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="245" width="390" x="2705" y="1150" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
