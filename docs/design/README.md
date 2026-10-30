@@ -2,6 +2,15 @@
 
 Use this directory for material that describes how BINO Care is designed and how its parts fit together. Add files and subdirectories as the design develops.
 
+```text
+design/
+├── system/      # Whole-system overview and architecture
+├── software/    # Platform, UI, AI, and software diagrams
+├── hardware/    # Hardware design and device details
+├── interfaces/  # Connections and data exchanged between parts
+└── decisions/   # Significant design choices and their reasons
+```
+
 Examples of material to keep here:
 
 * System architecture and component diagrams
