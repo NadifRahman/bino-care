@@ -37,7 +37,9 @@ The October 22 dates below are preparation targets inferred from the next-meetin
 
 * Which monitoring approach can detect and locate visitors in open hospital areas without requiring active scans?
 * How will a detected visitor's identity and location be matched to the hospital map and their permitted green, orange, and red zones? What response should each zone trigger?
-    * Perhaps some kind of geospatial data system?
+  * Perhaps some kind of geospatial data system?
 * Should tracking use hospital-issued equipment or personal devices, and how should the design address misleading or tampered tracking information?
 * How should the bed-assignment scenario coordinate destination-bed availability and transfer scheduling within a hospital and between hospitals?
-    * This is a matter of scope
+  * This is a matter of scope
+
+
