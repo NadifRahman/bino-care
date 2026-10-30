@@ -109,3 +109,5 @@ BINO Care will be accessible through a web application using browsers on both PC
 * How should zone permissions be resolved when someone has multiple roles or changes situation, such as a staff member becoming a patient?
 * Which AI approach should support bed recommendations and activity summaries, and how should its output be evaluated?
 * Should the prototype include optional room-occupancy sensors, and at which locations?
+
+
