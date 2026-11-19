@@ -11,13 +11,21 @@
         ]
       },
       "properties": {
-        "ble_recv": 0,
+        "kind": "ble_receiver",
+        "id": "receiver-01",
+        "zone_id": "zone-public",
         "marker-size": "large"
       }
     },
     {
       "type": "Feature",
       "properties": {
+        "kind": "zone",
+        "id": "zone-public",
+        "label": "Public area",
+        "role_colors": {
+          "visitor": "green"
+        },
         "fill": "rgba(0, 255, 4, 1)"
       },
       "geometry": {
@@ -71,6 +79,12 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "zone",
+        "id": "zone-restricted",
+        "label": "Restricted area",
+        "role_colors": {
+          "visitor": "red"
+        },
         "fill": "rgba(255, 0, 0, 1)"
       },
       "geometry": {
@@ -82,16 +96,16 @@
               43.6575724
             ],
             [
-              -79.3770347,
-              43.6576601
+              -79.3771592,
+              43.6569577
             ],
             [
               -79.376782,
               43.6570401
             ],
             [
-              -79.3771592,
-              43.6569577
+              -79.3770347,
+              43.6576601
             ],
             [
               -79.3774349,
@@ -104,7 +118,9 @@
     {
       "type": "Feature",
       "properties": {
-        "ble_recv": 0,
+        "kind": "ble_receiver",
+        "id": "receiver-02",
+        "zone_id": "zone-restricted",
         "marker-size": "large"
       },
       "geometry": {
