@@ -8,7 +8,7 @@ This section contains the high level modules of the software system. This part e
 
 ## Container Diagram
 
- ![contains_diagram_of_system](containers.drawio.svg)
+ ![contains_diagram_of_system](diagrams/containers.drawio.svg)
 
 ## Description
 
@@ -16,9 +16,9 @@ This section contains the high level modules of the software system. This part e
 
 # Data Model
 
-![ER diagram](er_diagram.drawio.svg)
+![ER diagram](diagrams/er_diagram.drawio.svg)
 
-The [ER diagram](er_diagram.drawio.svg) has two pages. The first covers bed placement and transfers. The second shows the map, zone permissions, and tracking. Both use the same Person, Bed, and Zone records in PostgreSQL.
+The [ER diagram](diagrams/er_diagram.drawio.svg) has two pages. The first covers bed placement and transfers. The second shows the map, zone permissions, and tracking. Both use the same Person, Bed, and Zone records in PostgreSQL.
 
 ## Tables
 

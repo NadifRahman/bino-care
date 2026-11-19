@@ -15,9 +15,7 @@ The main staff dashboard provides navigation to these workflows. Access to scree
 
 ## UI Workflow Diagram
 
-!\[BINO Care UI workflow diagram]
-
-This will be included at some point in the future.
+![BINO Care UI workflow diagram](diagrams/ui_workflows.drawio.svg)
 
 ## 1\. Inpatient Bed Assignment and Transfer
 
