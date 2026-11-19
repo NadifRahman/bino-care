@@ -43,8 +43,7 @@ The [ER diagram](diagrams/er_diagram.drawio.svg) has two pages. The first covers
 # Sequence diagrams
 
 ![Sequence diagram for a visitor badge detection in a restricted zone](diagrams/user_tracking_sequence_diagram.drawio.svg)
- 
-
+ This diagram showcases an example of an integrated system handling when a vistor enters a red-zone area.
 
 ## Bed placement and transfers
 
