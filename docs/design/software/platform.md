@@ -8,7 +8,7 @@ This section contains the high level modules of the software system. This part e
 
 ## Container Diagram
 
- ![contains_diagram_of_system](containers.drawio.svg)
+ ![contains_diagram_of_system](diagrams/containers.drawio.svg)
 
 ## Description
 
@@ -16,9 +16,9 @@ This section contains the high level modules of the software system. This part e
 
 # Data Model
 
-![ER diagram](er_diagram.drawio.svg)
+![ER diagram](diagrams/er_diagram.drawio.svg)
 
-The [ER diagram](er_diagram.drawio.svg) has two pages. The first covers bed placement and transfers. The second shows the map, zone permissions, and tracking. Both use the same Person, Bed, and Zone records in PostgreSQL.
+The [ER diagram](diagrams/er_diagram.drawio.svg) has two pages. The first covers bed placement and transfers. The second shows the map, zone permissions, and tracking. Both use the same Person, Bed, and Zone records in PostgreSQL.
 
 ## Tables
 
@@ -40,6 +40,11 @@ The [ER diagram](er_diagram.drawio.svg) has two pages. The first covers bed plac
 | `location_observation` | Records when and where a reading was captured and its zone classification when resolved. |
 | `security_event` | Records a warning, notification, or staff response linked to an observation. |
 
+# Sequence diagrams
+
+![Sequence diagram for a visitor badge detection in a restricted zone](diagrams/user_tracking_sequence_diagram.drawio.svg)
+ This diagram showcases an example of an integrated system handling when a vistor enters a red-zone area.
+
 ## Bed placement and transfers
 
 Person represents a patient, visitor, or staff member. A person can have several roles and may have a login through User Account. Reservations and transfers record the staff account responsible for the action. Admissions enters equipment and accessibility needs in the search form. The backend uses those inputs to find suitable beds and can pass the matching beds to the recommendation service. The form is only needed for that search.
@@ -52,17 +57,21 @@ Bed stores readiness as **Ready**, **Cleaning**, or **Unavailable**. Derive whet
 
 ## Map import
 
-Each demo database starts with one georeferenced GeoJSON FeatureCollection. The same format works for a hospital layout, an apartment, or a university demo. Zones are flat on each floor. A room, corridor, or treatment bay can be its own zone. Store the room label and unit with the zone when they apply, and keep bed equipment and accessibility details on Bed.
+Each demo database starts with one georeferenced GeoJSON FeatureCollection. The prototype uses a single layer of zones. A room, corridor, or treatment bay can be its own zone. The [example visitor-tracking map](diagrams/example_map_geojson.geojson) contains a public zone, a restricted zone, and one BLE receiver in each.
 
 | Feature kind | Geometry | Properties |
 | --- | --- | --- |
-| `floor` | Polygon | Stable `id`, `kind`, and a floor label |
-| `zone` | Polygon | Stable `id`, `kind`, `floor_id`, and `role_colors` |
+| `zone` | Polygon | Stable `id`, `kind`, `label`, and `role_colors`. Include `unit` where applicable. |
+| `ble_receiver` | Point | Stable `id`, `kind`, and `zone_id`. The point marks the receiver's installation location. |
 | `bed` | Point | Stable `id`, `kind`, and `zone_id` |
 
-A zone can have `"role_colors": {"visitor": "red", "patient": "orange", "nurse": "green"}`. Import each pair as a Role–Zone Rule. The explicit links tell the system which floor a point belongs to, even where floors overlap on the map.
+**TODO** Remove the `Floor` entity, `floor_id`, and floor-dependent wording from the platform data model, ER diagram, and UI design.
 
-On first startup, validate the geometry, feature IDs, parent links, role names, and colours before seeding PostGIS in one transaction. A restart with the same layout keeps the imported IDs, staff edits, and operational records. Use a separate demo database for another layout.
+On first startup, validate the geometry, unique feature IDs, `zone_id` links, role names, and colours. In one PostGIS transaction, seed zones and import each `role_colors` entry as a Role–Zone Rule, then seed receiver configuration. For bed layouts, import bed points after their zones and store equipment and accessibility on Bed.
+
+The Raspberry Pi sends the receiver feature's `id` as `receiver_id`. The backend looks up that receiver's `zone_id` and applies the tracked person's access rule for that zone. In the example, `receiver-01` produces a green observation for a registered visitor. `receiver-02` produces a red observation and a security notification.
+
+A restart with the same layout keeps the imported IDs, staff edits, and operational records. Use a separate demo database for another layout.
 
 ## Monitoring and security
 

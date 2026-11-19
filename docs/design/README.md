@@ -5,7 +5,8 @@ Use this directory for material that describes how BINO Care is designed and how
 ```text
 design/
 ├── system/      # Whole-system overview and architecture
-├── software/    # Platform, UI, AI, and software diagrams
+├── software/    # Platform, UI, and AI designs
+│   └── diagrams/ # Software diagrams
 ├── hardware/    # Hardware design and device details
 ├── interfaces/  # Connections and data exchanged between parts
 └── decisions/   # Significant design choices and their reasons
